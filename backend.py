@@ -64,4 +64,4 @@ def generate_srs():
     return jsonify({'srs': srs_content})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
